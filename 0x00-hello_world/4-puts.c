@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+  /*Declaration Process*/
+  char output1[50];
+
+  strcpy(output1, "Programming is like building a multilingual puzzle\n");
+  puts(output1);
+
+  return(0);
+}
