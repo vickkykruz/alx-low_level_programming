@@ -1,9 +1,13 @@
-#include <stdio.h>
-
+#include<stdio.h>
+#include<string.h>
+/**
+ * main - main
+ * Description: 'int'
+ * section header: included stdio.h and string.h files
+ * Return: Programming is like buliding a multilingul puzzle
+ */
 int main(void)
 {
-  /*Declaration Process*/
-  puts("\"Programming is like building a multilingual puzzle");
-
-  return(0);
+puts("\"Programming is like building a multilingual puzzle");
+return (0);
 }
