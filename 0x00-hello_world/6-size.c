@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ * main - Starting Point
+ * Description: This main function display the size of the data types
+ * Return: 0
+ */
 int main(void)
 {
 printf("Size of a char: %i byte(s)\n", sizeof(char));
