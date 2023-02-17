@@ -23,7 +23,7 @@ printf("%i is negative\n", n);
 }
 else
 {
-printf("%i is zero", n);
+printf("is zero");
 }
 return (0);
 }
