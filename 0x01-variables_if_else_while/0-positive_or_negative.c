@@ -21,9 +21,13 @@ else if (n < 0)
 {
 printf("%i is negative\n", n);
 }
+else if (n == 0)
+{
+printf("0 is zero\n");
+}
 else
 {
-printf("is zero");
+printf("Error");
 }
 return (0);
 }
