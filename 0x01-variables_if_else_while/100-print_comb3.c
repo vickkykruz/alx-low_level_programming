@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * main - starting point
- * Description - This print numbers in a two single digit from 01 - 89 with a ',' and ' '
+ * Description - This print numbers in a two single digit from 01 - 89
  * @n1 - This is a vraiable that represent ones
  * @n2 - This is a variable that represent tens
  * section headers - stdio.h, stlib.h
