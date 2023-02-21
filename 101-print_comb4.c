@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+  int unit = '0';
+  int tens = '0';
+  in hundred = '0';
+  for (hundred; hundred <= '9'; hundred++)
+    {
+      for (tens; tens <= '9'; tens++)
+	{
+	  for (unit; unit <= '9'; unit++)
+	    {
