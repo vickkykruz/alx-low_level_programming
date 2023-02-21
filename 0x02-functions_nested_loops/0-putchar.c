@@ -2,7 +2,6 @@
 /**
  * main - starting point
  * Description - print the output _putchar
- * @word: Is used here to pass the agreement
  * section headers - main.h
  * Return: 0
  */
@@ -18,5 +17,5 @@ _putchar('a');
 _putchar('r');
 _putchar('\n');
 
- return (0);
+return (0);
 }
