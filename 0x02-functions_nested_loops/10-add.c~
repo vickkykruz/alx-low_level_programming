@@ -1,0 +1,13 @@
+#include "main.h"
+#include <math.h>
+/**
+ * add - The function add two numbers
+ * @num1 - The input value of num1
+ * @num2 - The input value of num2
+ * Return: result
+*/
+int add(int num1, int num2)
+{
+int result = num1 + num2;
+return (result);
+}
