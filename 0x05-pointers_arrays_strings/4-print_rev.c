@@ -1,0 +1,19 @@
+#include "main.h"
+/**
+ * print_rev - print a string in reverse manner
+ * @s: The input value
+ * Return: void
+*/
+void print_rev(char *s)
+{
+int n = 0;
+while (s[n])
+{
+n++;
+}
+while (n--)
+{
+_putchar(s[n]);
+}
+_putchar('\n');
+}
