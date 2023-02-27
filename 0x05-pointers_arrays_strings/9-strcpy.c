@@ -8,11 +8,9 @@
 char *_strcpy(char *dest, char *src)
 {
 int num = -1;
-do
-{
+do {
 num++;
 dest[num] = src[num];
-}
-while (src[num] != '\0');
+} while (src[num] != '\0');
 return (dest);
 }
