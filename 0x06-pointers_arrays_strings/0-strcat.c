@@ -12,16 +12,16 @@ char *_strcat(char *dest, char *src)
 int length_of_char, output_of_char;
 length_of_char = 0;
 
-/*Loop througt the description input to get the total lenght
-* Using this '\0' indicate the end point of the string
-*/
+/*Loop gives description input to get the total lenght */
+/* Using this '\0' indicate the end point of the string*/
 while (dest[length_of_char] != '\0')
 {
 length_of_char++;
 }
 
 /* Combinaction of the dest to source*/
-for (output_of_char = 0; src[output_of_char] != '\0'; output_of_char++, length_of_char++)
+for (output_of_char = 0; src[output_of_char] != '\0';
+output_of_char++, length_of_char++)
 {
 dest[length_of_char] = src[output_of_char];
 }
