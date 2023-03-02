@@ -4,7 +4,7 @@
  * @c: The input value
  * Return: c
 */
-char *strig_toupper(char *c)
+char *string_toupper(char *c)
 {
 int num = 0;
 while (c[num] != '\0')
