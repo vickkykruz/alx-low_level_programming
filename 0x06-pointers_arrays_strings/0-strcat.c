@@ -1,19 +1,19 @@
 #include "main.h"
 /**
- * strcat - Using to concatenates two strings
+ * _strcat - Using to concatenates two strings
  * @dest: The description input
  * @src: The source input
- * Return: char
+ * Return: void
 */
 
 char *_strcat(char *dest, char *src)
 {
-/*Decleration of variables*/
+/* Decleration of variables */
 int length_of_char, output_of_char;
 length_of_char = 0;
 
-/*Loop gives description input to get the total lenght */
-/* Using this '\0' indicate the end point of the string*/
+/* Loop gives description input to get the total lenght */
+/* Using this '\0' indicate the end point of the string */
 while (dest[length_of_char] != '\0')
 {
 length_of_char++;
