@@ -1,0 +1,30 @@
+#include "main.h"
+/**
+ *cap_string - capitalizes all words of a string
+ * @c: The input variable
+ * Return: c
+*/
+char *cap_string(char *c)
+{
+int num;
+num = 0;
+while (c[num] != '\0')
+{
+if (c[0] >= 97 && c[0] <= 122)
+{
+c[0] = c[0] - 32;
+}
+if (c[num] == ' ' || c[num] == '\t' || c[num] == '\n'
+|| c[num] == ';' || c[num] == '.' || c[num] == ','
+|| c[num] == '!' || c[num] == '"' || c[num] == '?'
+|| c[num] == '(' || c[num] == ')' || c[num] == '{' || c[num] == '}')
+{
+if (c[num + 1] >= 97 && c[num + 1] <= 122)
+{
+c[num + 1] = c[num + 1] - 32;
+}
+}
+num++;
+}
+return (c);
+}
