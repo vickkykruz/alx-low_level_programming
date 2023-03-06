@@ -15,7 +15,7 @@ for (rows = 0; rows < 8; rows++)
 for (columns = 0; columns < 8; columns++)
 {
 _putchar(a[rows][columns]);
-_putchar('\n');
 }
+_putchar('\n');
 }
 }
