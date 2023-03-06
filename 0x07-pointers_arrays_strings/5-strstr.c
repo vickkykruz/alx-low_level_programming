@@ -1,4 +1,5 @@
 #include "main.h"
+#define NULL 0
 /**
  * _strstr - finds the first occurrence of the
  * substring needle in the string haystack
@@ -22,7 +23,7 @@ while (haystack[i] != '\0')
 if (haystack[i] == needle[0])
 {
 n = i, num = 0;
-while (needle[num} != '\0')
+while (needle[num] != '\0')
 {
 if (haystack[n] == needle[num])
 {
