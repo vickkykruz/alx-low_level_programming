@@ -1,3 +1,4 @@
+
 #include "main.h"
 /**
  * _print_rev_recursion - print a reverse string
@@ -7,20 +8,15 @@
 
 void _print_rev_recursion(char *s)
 {
-  /* Declarate a variable*/
-  int len = 0;
-  /*Base Case */
-  if (*s == '\0')
-    {
-      _putchar('\n');
-      return;
-    }
+/* Declarate a variable*/
+/*Base Case */
+if (*s == '\0')
+{
+/* _putchar('\n'); */
+return;
+}
 
-  while (s[len] != '\0')
-    {
-      len++;
-    }
-
-  _putchar(len);
-  /*  _print_rev_recursion(s[len] - 1); */
+_print_rev_recursion(s + 1);
+_putchar(*s);
+/*  _print_rev_recursion(s[len] - 1); */
 }
