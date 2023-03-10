@@ -18,5 +18,9 @@ mult *= num;
 }
 printf("%d\n", mult);
 }
+else
+{
+printf("Error\n");
+}
 return (0);
 }
