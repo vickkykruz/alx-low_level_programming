@@ -2,7 +2,7 @@
 /**
  * main - print the number of arguments passed
  * @argc: The number of arguments
- * @argc: the string vector of an array
+ * @argv: the string vector of an array
  * Return: 0
 */
 int main(int argc, char **argv)
