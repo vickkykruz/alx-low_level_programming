@@ -29,13 +29,13 @@ char *str_concat(char *s1, char *s2)
 char *ptr;
 int len, i, j;
 
-if (s1 == 0)
+if (s1 == NULL)
 {
-return (NULL);
+s1 = "";
 }
-if (s2 == 0)
+if (s2 == NULL)
 {
-return (NULL);
+s2 = "";
 }
 
 /* To get the total length of both strings */
