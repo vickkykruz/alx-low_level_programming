@@ -45,9 +45,9 @@ strlen2 = _strlen(s2);
 if (n > strlen2)
 {
 ptr = malloc((strlen1 + strlen2 + 1) * sizeof(char));
-if (ptr == 0)
+if (ptr == NULL)
 {
-return (NULL);
+return (0);
 }
 
 for (i = 0; i < strlen1; i++)
@@ -58,7 +58,7 @@ for (i = 0; i < (strlen1 + strlen2); i++)
 {
 ptr[i] = s2[i - strlen1];
 }
-}
 ptr[i] = '\0';
+}
 return (ptr);
 }
