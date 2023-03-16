@@ -22,9 +22,9 @@ if (!ptr)
 return (NULL);
 }
 
-while (i <= max - min)
+for (i = 0; min <= max; i++)
 {
-ptr[i++] = min++;
+ptr[i] = min++;
 }
 return (ptr);
 }
