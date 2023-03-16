@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * strlen - function that get the length of a string
+ * _strlen - function that return lenght of the string
  * @s: The input string
  * Return: The lenght
 */
-int strlen(char *s)
-{
-int i = 0;
 
+int _strlen(char *s)
+{
+unsigned int i = 0;
 while (s[i] != '\0')
 {
 i++;
@@ -28,7 +28,7 @@ return (i);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *ptr;
-int i, strlen1 = 0, strlen2 = 0;
+unsigned int i, strlen1 = 0, strlen2 = 0;
 
 if (s1 == NULL)
 {
@@ -40,12 +40,11 @@ s2 = "";
 }
 
 /* To get the length of the string */
-strlen1 = strlen(s1);
-strlen2 = strlen(s2);
-
-if (n >= strlen2)
+strlen1 = _strlen(s1);
+strlen2 = _strlen(s2);
+if (n > strlen2)
 {
-ptr = malloc((strlen1 + strlen2) +1 * sizeof(char));
+ptr = malloc((strlen1 + strlen2 + 1) * sizeof(char));
 if (ptr == 0)
 {
 return (NULL);
@@ -53,11 +52,11 @@ return (NULL);
 
 for (i = 0; i < strlen1; i++)
 {
-ptr[i] = strlen1[i];
+ptr[i] = s1[i];
 }
-for (; i < (strlen1 + strlen2); i++)
+for (i = 0; i < (strlen1 + strlen2); i++)
 {
-ptr[i] = strlen2[i - strlen1];
+ptr[i] = s2[i - strlen1];
 }
 }
 ptr[i] = '\0';
