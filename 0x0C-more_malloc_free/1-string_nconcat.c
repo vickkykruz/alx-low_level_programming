@@ -28,37 +28,39 @@ return (i);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *ptr;
-unsigned int i, strlen1 = 0, strlen2 = 0;
-
-if (s1 == NULL)
+unsigned int i, j = 0, strlen1 = 0, strlen2 = 0;
+if (s1 == NULL || s2 == NULL)
 {
-s1 = "";
+s1 = s2 = "";
 }
-if (s2 == NULL)
-{
-s2 = "";
-}
-
 /* To get the length of the string */
 strlen1 = _strlen(s1);
 strlen2 = _strlen(s2);
-if (n > strlen2)
+if (n <  strlen2)
+{
+ptr = malloc((strlen1 + n + 1) * sizeof(char));
+}
+else
 {
 ptr = malloc((strlen1 + strlen2 + 1) * sizeof(char));
-if (ptr == NULL)
-{
-return (0);
 }
-
+if (!ptr)
+{
+return (NULL);
+}
 for (i = 0; i < strlen1; i++)
 {
 ptr[i] = s1[i];
 }
-for (i = 0; i < (strlen1 + strlen2); i++)
+
+while (n < strlen2 && i < (strlen1 + n))
 {
-ptr[i] = s2[i - strlen1];
+ptr[i++] = s2[j++];
+}
+while (n >= strlen2 && i < (strlen1 + strlen2))
+{
+ptr[i++] = s2[j++];
 }
 ptr[i] = '\0';
-}
 return (ptr);
 }
