@@ -29,9 +29,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *ptr;
 unsigned int i, j = 0, strlen1 = 0, strlen2 = 0;
-if (s1 == NULL || s2 == NULL)
+if (s1 == NULL)
 {
-s1 = s2 = "";
+s1 = "";
+}
+if (s2 == NULL)
+{
+s2 = "";
 }
 /* To get the length of the string */
 strlen1 = _strlen(s1);
