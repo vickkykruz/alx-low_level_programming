@@ -9,5 +9,8 @@
 void print_name(char *name, void (*f)(char *))
 {
 	/* Here we are going to the function with an agrument name */
+	if (!name || !f)
+		return;
 	f(name);
+
 }
