@@ -1,32 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main - starting point
- * Description - This prints all possible of two two-digit no
- * Return: 0
- */
+ * main - returns a combination of number
+ * Return: return 0 if successful
+*/
+
 int main(void)
 {
-int na, nb;
-for (na = 0; na <= 100; na++)
-{
-for (nb = 0; nb <= 100; nb++)
-{
-if (na < nb)
-{
-putchar((na / 10) + 48);
-putchar((na % 10) + 48);
-putchar(' ');
-putchar((nb / 10) + 48);
-putchar((nb % 10) + 48);
-if (na != 98 || nb != 98)
-{
-putchar(',');
-putchar(' ');
+	int i, j;
+	
+	for (i = 0; i < 100; i++)
+	{
+		for (j = 0; j < 100; j++)
+		{
+			if (i < j)
+			{
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
 }
-}
-}
-}
-putchar('\n');
-return (0);
-}
+
