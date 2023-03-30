@@ -12,6 +12,8 @@ size_t print_list(const list_t *h)
 {
 	size_t counter = 1;
 
+	if (h == NULL)
+		return (0);
 	/* OPERATION PERMFORED */
 	while (h->next != NULL)
 	{
