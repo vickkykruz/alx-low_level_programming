@@ -2,6 +2,9 @@
 #define SINGLY_LINKED_LISTS
 
 #include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 /*Define the struct format here */
 /**
  * struct list_s - singly linked list
