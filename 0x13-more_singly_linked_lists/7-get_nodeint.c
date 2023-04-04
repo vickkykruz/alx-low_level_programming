@@ -11,12 +11,18 @@
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int counter = 0;
-	listint_t *temp = head;
+	listint_t *current = head;
 
-	while (temp && counter < index)
+	/** To check if node exits **/
+	if (!head)
+		return (NULL);
+
+	while (current != NULL)
 	{
-		temp = temp->next;
+		if (counter == index)
+			head = current;
 		counter++;
+		current = current->next;
 	}
-
-	return (temp ? temp : NULL);
+	return (head);
+}
