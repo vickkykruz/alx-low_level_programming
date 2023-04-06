@@ -20,17 +20,15 @@ listint_t *find_listint_loop(listint_t *head)
 
 		if (slow == fast)
 		{
-			listint_t *current = head;
-
-			while (current != slow)
+			/** Return the pointer **/
+			slow = head;
+			while (slow != fast)
 			{
-				current = current->next;
 				slow = slow->next;
+				fast = fast->next;
 			}
-
-			return (current);
+			return (fast);
 		}
 	}
-
 	return (NULL);
 }
