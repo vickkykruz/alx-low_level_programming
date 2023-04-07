@@ -32,7 +32,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	/** We will read the fie into the memory **/
 	read_no = read(fd, c, letters);
-	if (read_no <= 0)
+	if (read_no < 0)
 	{
 		free(c);
 		return (0);
@@ -42,6 +42,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	/** We will write from he memory to the file **/
 	write_no = write(STDOUT_FILENO, c, letters);
+	free(c);
 	if ((write_no == -1) || (write_no == 0))
 	{
 		free(c);
@@ -50,11 +51,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (read_no != write_no)
 	{
-		free(c);
 		return (0);
 	}
 
-	free(c);
+	/* free(c); */
 	/* close(fd); */
 	return (write_no);
 }
