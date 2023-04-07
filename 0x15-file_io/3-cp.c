@@ -13,7 +13,7 @@ void _cp_file(const char *file_from, const char *file_to)
 	char *c;
 	if (file_to)
 	{
-		fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
+		fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC | O_APPEND, 0664);
 		if (fd_to < 0)
 		{
 			dprintf(2, "Error: Can't write to %s\n", file_to);
@@ -56,6 +56,8 @@ void _cp_file(const char *file_from, const char *file_to)
 
 /**
  * main -  program that copies the content of a file to another file.
+ * @ac: The argument counter
+ * @av: The argments vector
  *
  * Return: 0
 */
