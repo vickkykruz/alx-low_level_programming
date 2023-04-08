@@ -24,7 +24,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	/** we want to allocate the memory to read input **/
 	c = (char *) malloc(sizeof(char) * letters);
 	if (c == NULL)
+	{
+		close(fd);
 		return (0);
+	}
 	/** We will read the fie into the memory **/
 	read_no = read(fd, c, letters);
 	if (read_no < 0)
@@ -36,11 +39,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	/** We will write from he memory to the file **/
 	write_no = write(STDOUT_FILENO, c, letters);
 	free(c);
-	if ((write_no == -1) || (write_no == 0))
-	{
-		free(c);
-		return (0);
-	}
 
 	if (read_no != write_no)
 		return (0);

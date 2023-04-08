@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <errno.h>
+#include <elf.h>
 
 #define BUFFER_SIZE 1024
 
