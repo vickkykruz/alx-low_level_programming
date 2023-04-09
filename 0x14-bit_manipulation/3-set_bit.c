@@ -12,7 +12,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	if (!n)
 		return (-1);
 
-	if (index > 53)
+	if (!index)
 		return (-1);
 
 	/** We return the set bit o the value **/
