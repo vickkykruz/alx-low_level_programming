@@ -16,5 +16,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 		return (-1);
 
 	/** We return the set bit o the value **/
-	return (*n |= (1 << index));
+	if (*n |= (1 << index))
+		return (*n |= (1 << index));
+	return(1);
 }
