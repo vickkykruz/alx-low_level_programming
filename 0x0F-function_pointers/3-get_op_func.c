@@ -6,7 +6,7 @@
  * t corresponds to the operator given as a parameter.
  * @s: The inpit characterics
 */
-int (*get_op_func(char * s))(int, int)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
@@ -19,12 +19,12 @@ int (*get_op_func(char * s))(int, int)
 	int i;
 
 	i = 0; 
-	while (ops[i].op)
+	while (i < 10)
 	{
-		if (strcmp(ops[i].op, s) == 0)
-			return (ops[i].f);
+		if (s[0] == ops->op[i])
+			break;
 		i++;
 	}
 
-	return (NULL);
+	return (ops[i / 2].f);
 }
