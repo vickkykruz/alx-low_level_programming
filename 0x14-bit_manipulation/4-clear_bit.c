@@ -10,11 +10,16 @@
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 	/** Declaration of varaible **/
-	int mask;
+	unsigned long int mask;
 
 	if (!n || index > 53)
-		return (0);
+		return (-1);
 
 	/** Mask C operatiom */
-	int = maskimg
-		return Lp
+	/* masking will be the result of ~(num(0 << index)) */
+	mask = ~(0 << index);
+	mask = *n & mask;
+	/* mask = (*n & ~mask) | ((0 << index) & mask); */
+
+	return (1);
+}
