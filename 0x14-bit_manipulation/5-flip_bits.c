@@ -12,23 +12,14 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
+	unsigned int counter;
+
 	if (!n)
 		return (-1);
+
 	if (!m)
 		return (-1);
 
-	int i = 0;
-	unsigned int counter;
-	unsigned long int result, *ptr;
-
-	ptr = malloc(sizeof(unsigned long int) * 1);
-	result = n ^ m;
-	*ptr = result;
-
-	while (i > 0)
-	{
-		if (ptr[i] == 1)
-			counter++;
-	}
+	counter = __builtin_popcount(n ^ m);
 	return (counter);
 }
