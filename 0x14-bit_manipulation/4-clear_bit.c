@@ -17,9 +17,9 @@ int clear_bit(unsigned long int *n, unsigned int index)
 
 	/** Mask C operatiom */
 	/* masking will be the result of ~(num(0 << index)) */
-	mask = ~(0 << index);
-	mask = *n & mask;
-	/* mask = (*n & ~mask) | ((0 << index) & mask); */
+	mask = (1 << index);
+	/* mask = *n & mask; */
+	mask = (*n & ~mask) | ((0 << index) & mask);
 
 	return (1);
 }

@@ -1,0 +1,45 @@
+#include "main.h"
+/**
+ * _strlen - A function that gets the total lenght of a string
+ * @c: The given value
+ *
+ * Return: Total len (i)
+*/
+
+unsigned int _strlen(unsigned long int *c)
+{
+	unsigned int i = 0;
+
+	while (c[i] != '\0')
+		i++;
+
+	return (i);
+}
+/**
+ * flip_bits - A function that returns the number of bits you would need
+ * to flip to get from one number to another.
+ * @n: the number A
+ * @m: the number B
+ *
+ * Return: value
+*/
+
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
+{
+        unsigned int counter, i, len;
+        unsigned long int *result;
+
+	result = n ^ m;
+
+	len = _strlen(result);
+
+	for (i = len; i >= 0; i--)
+	{
+		if (*result[i] == 1)
+		{
+			counter += 1;
+		}
+	}
+
+	return (counter);
+}
