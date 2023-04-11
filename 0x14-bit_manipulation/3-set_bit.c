@@ -20,8 +20,8 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	/** We return the set bit o the value **/
 	value = *n | (1 << index);
-	/* if (value) */
-		/* return (*n | (1 << index)); */
+	if (value)
+		return (*n | (1 << index));
 
 	return (1);
 }
