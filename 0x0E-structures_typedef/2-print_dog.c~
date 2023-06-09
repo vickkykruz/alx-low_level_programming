@@ -1,6 +1,0 @@
-#include "dog.h"
-/**
- * print_dog - function that prints a struct dog
- * @d: This in input variable of struct dog
- * Description: a function that prints a struct dog
-*/
