@@ -30,7 +30,7 @@ int _atoi(char *s)
 	len = _strlen(s);
 	while (i < len && z == 0)
 	{
-		if (s[i] == '_')
+		if (s[i] == '-')
 			x++;
 		if (s[i] >= '0' && s[i] <= '9')
 		{
