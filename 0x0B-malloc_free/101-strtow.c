@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _count_words - This is a funxtion that counts the number of words in a string
+ * _count_words - This is a funxtion that counts the number of words in a
+ * string
  * @str: This is an argument that repreaent the given string
  * Return: This return the number of words counted
  */
@@ -50,7 +51,7 @@ char **strtow(char *str)
 			{
 				end = i;
 				tmp = (char *) malloc(sizeof(char) * (y + 1));
-				if(tmp == NULL)
+				if (tmp == NULL)
 					return (NULL);
 				while (start < end)
 					*tmp = str[start++];
