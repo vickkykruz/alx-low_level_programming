@@ -1,6 +1,6 @@
 ## 0x0B. C - malloc, free
 <img src="https://th.bing.com/th/id/OIP.NTmZl3zRXTIvgAYKGm4pfgHaCR?pid=ImgDet&rs=1"  alt="img">
-### ALX TASKS
+## ALX TASKS
 
 0. Float like a butterfly, sting like a bee
 1. The woman who has no imagination has no wings
