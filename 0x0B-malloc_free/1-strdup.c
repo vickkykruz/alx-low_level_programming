@@ -17,7 +17,12 @@ int _strlen(char *str)
 
 	return (i);
 }
-
+/**
+ * _strcpy - This is a function that return the copy string
+ * @prt: This is an argument that represent the destination pointer
+ * @str: This is an argument that represent the source pointer
+ * Return: This return the copied string pointer
+ */
 char *_strcpy(char *prt, char *str)
 {
 	int i = 0;
