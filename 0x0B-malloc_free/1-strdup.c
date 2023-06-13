@@ -34,7 +34,7 @@ char *_strdup(char *str)
 		return (NULL);
 
 	len = _strlen(str);
-	prt = (char *) malloc((len + 1) * sizeof(str));
+	prt = (char *) malloc((len + 1) * sizeof(char));
 	if (prt == NULL)
 		return (NULL);
 
