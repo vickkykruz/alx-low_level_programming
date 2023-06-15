@@ -9,4 +9,5 @@ int *array_range(int min, int max);
 
 /** Advance **/
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+int _putchar(char c);
 #endif
