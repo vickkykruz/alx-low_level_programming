@@ -1,5 +1,5 @@
 ## 0x0E. C - Structures, typedef
-<img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2021/3/50af78a28a081e809856d4cdbde2d7ca9d4aa93d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230619%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230619T141745Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=50bbfb7b5745eb042b48535287ad3f956b5f2674b0c08bcee4783c562541167d" alt="Structures, typedef">
+<img src="https://1.bp.blogspot.com/-eGP9OioSHh8/UocvSXoBbpI/AAAAAAAAERQ/bv5j23EpSHQ/s1600/ScreenshotAnimationDataStructures.gif" alt="Structures, typedef">
 
 ### ALX TASKS
 0. Poppy
