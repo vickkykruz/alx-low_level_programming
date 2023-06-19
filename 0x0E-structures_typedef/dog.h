@@ -14,6 +14,10 @@ struct dog
 	float age;
 	char *owner;
 };
+/**
+ * dog_t - This is a decleration of struct dog to dog_t
+ */
+typedef struct dog dog_t;
 
 /** Prototypes **/
 void init_dog(struct dog *d, char *name, float age, char *owner);
