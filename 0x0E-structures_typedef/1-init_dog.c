@@ -11,8 +11,11 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	/** Initialze the information **/
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
+	if (d)
+	{
+		/** Initialze the information **/
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
+	}
 }
