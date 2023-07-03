@@ -20,7 +20,8 @@ size_t print_list(const list_t *h)
 		/* Print out the value of the element in each node */
 		if (h->str == NULL)
 			printf("[%d] %s\n", 0, "(nil)");
-		printf("[%d] %s\n", h->len, h->str);
+		else
+			printf("[%d] %s\n", h->len, h->str);
 
 		/* Increament the node */
 		h = h->next;
