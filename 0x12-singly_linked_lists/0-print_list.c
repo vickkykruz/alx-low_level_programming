@@ -8,14 +8,14 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t num = 1; /* Counter */
+	size_t num = 0; /* Counter */
 
 	/* Check if the node *h is a null */
-	/*if (h == NULL)*/
-		/* return (0);*/
+	if (h == NULL)
+		return (0);
 
 	/* Else we loop through the loop */
-	while (h->next != NULL)
+	while (h)
 	{
 		/* Print out the value of the element in each node */
 		if (h->str == NULL)
@@ -28,6 +28,6 @@ size_t print_list(const list_t *h)
 	}
 
 	/* Based on the condition != NULL we print the last node */
-	printf("[%d] %s\n", h->len, h->str);
+	/* printf("[%d] %s\n", h->len, h->str); */
 	return (num);
 }
