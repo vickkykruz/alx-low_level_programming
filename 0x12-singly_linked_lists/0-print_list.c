@@ -11,8 +11,8 @@ size_t print_list(const list_t *h)
 	size_t num = 1; /* Counter */
 
 	/* Check if the node *h is a null */
-	if (h == NULL)
-		return (0);
+	/*if (h == NULL)*/
+		/* return (0);*/
 
 	/* Else we loop through the loop */
 	while (h->next != NULL)
@@ -23,8 +23,8 @@ size_t print_list(const list_t *h)
 		printf("[%d] %s\n", h->len, h->str);
 
 		/* Increament the node */
-		h = h->next;
 		num++;
+		h = h->next;
 	}
 
 	/* Based on the condition != NULL we print the last node */
