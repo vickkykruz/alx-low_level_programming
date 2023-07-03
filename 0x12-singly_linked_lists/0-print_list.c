@@ -23,8 +23,8 @@ size_t print_list(const list_t *h)
 		printf("[%d] %s\n", h->len, h->str);
 
 		/* Increament the node */
-		num++;
 		h = h->next;
+		num++;
 	}
 
 	/* Based on the condition != NULL we print the last node */
