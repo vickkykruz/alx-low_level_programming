@@ -1,5 +1,6 @@
 ## ALX LOW LEVEL PROGRAMMING TRANING
-<img align="center" src="https://th.bing.com/th/id/OIP.lcNTkMENl-PbtDwKAjGsRQHaEK?pid=ImgDet&rs=1" alt="ALXSE">
+<p align="center"><img src="https://th.bing.com/th/id/OIP.lcNTkMENl-PbtDwKAjGsRQHaEK?pid=ImgDet&rs=1" alt="ALXSE" ></p>
+
 ### C - PROGRAMMING TRANING
 1. HELLO WORLD
 2. IF-ELSE-WHILE
@@ -13,3 +14,4 @@
 10. STRUCTURES-TYPEDEF
 11. FUNCTION-POINTERS
 12. VARIADIC FUNCTIONS
+13. LINKED LIST
