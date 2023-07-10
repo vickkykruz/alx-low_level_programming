@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 	}
 
 	file_f = open(argv[1], O_RDONLY);
-	file_t = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
+	file_t = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 00664);
 	check_err(file_f, file_t, argv);
 
 	nch = 1024;
