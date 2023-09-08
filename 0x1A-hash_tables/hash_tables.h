@@ -4,6 +4,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 
 /**
@@ -44,4 +45,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 int handle_collision(hash_table_t *table, unsigned long int index,
 const char *key, const char *value);
 char *hash_table_get(const hash_table_t *ht, const char *key);
+void hash_table_print(const hash_table_t *ht);
+char *realloc_res(char *res, char *str);
 #endif
