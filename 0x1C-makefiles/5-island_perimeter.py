@@ -1,6 +1,11 @@
 #!/user/bin/python3
 """
     This is a module that Create a function def island_perimeter(grid)
+
+    Requirements:
+        => First line contains #!/usr/bin/python3
+        => You are not allowed to import any module
+        => Module and function must be documented
 """
 
 
