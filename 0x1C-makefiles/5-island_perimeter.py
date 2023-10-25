@@ -26,20 +26,26 @@ def island_perimeter(grid):
             to the water around the island).
     """
 
-    height = len(grid)
-    width = len(grid[0])
-    size = 0
-    egde = 0
+    perimeter = 0
+    for i in range(len(grid)):
 
-    for i in range(height):
-        for j in range(width):
+        if 1 in grid[i]:
+            perimeter += 2
 
+        for j in range(len(grid[i])):
             if grid[i][j] == 1:
-                size += 1
+                try:
+                    if grid[i - 1][j] == 0 or i == 0:
+                        perimeter += 1
+                except IndexError:
+                    if i == 0:
+                        preimeter += 1
 
-                if (j > 0 and grid[i][j - 1] == 1):
-                    egde += 1
+                try:
+                    if grid[i + 1][j] == 0 or i == len(grid) - 1:
+                        perimeter += 1
+                except IndexError:
+                    if i == len(grid) - 1:
+                        perimeter += 1
 
-                if (i > 0 and grid[i - 1][j] == 1):
-                    egde += 1
-    return size * 4 - egde * 2
+    return perimeter
