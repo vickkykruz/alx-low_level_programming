@@ -1,0 +1,15 @@
+# Create you first useful Makefile
+
+CC = gcc
+# the compiler to be used
+
+SRC := $(wildcard *.c)
+
+OBJ := $(SRC:%.c=%.o)
+
+NAME = school
+
+all: file_exe
+
+file_exe:
+	${CC} ${OBJ} -o ${NAME}
