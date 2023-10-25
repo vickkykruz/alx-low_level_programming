@@ -1,0 +1,25 @@
+# Create a makefile
+
+CC = gcc
+# the compiler to be used
+
+SRC := $(wildcard *.c)
+
+OBJ := $(SRC:%.c=%.o)
+
+NAME = school
+
+RM = rm -f
+
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
+
+clean:
+	${RM} *~ ${NAME}
+
+oclean:
+	${RM} ${OBJ}
+
+fclean: clean oclean
+
+re: clean all
