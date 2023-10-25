@@ -1,0 +1,6 @@
+# Create your first Makefile
+
+all: file_exe
+
+file_exe:
+	gcc main.c school.c -o school
