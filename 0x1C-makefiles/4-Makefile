@@ -11,3 +11,20 @@ OBJ=$(SRC:%.c=%.o)
 
 NAME=school
 # the name of the executable
+
+RM=rm -f
+
+CFLAGS=-Wall -Werror -Wextra -pedantic
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RN) *~ $(NAME)
+
+oclean:
+	$(RN) $(OBJ)
+
+fclean: clean oclean
+
+re: oclean all
