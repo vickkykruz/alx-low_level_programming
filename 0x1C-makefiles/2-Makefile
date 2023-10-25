@@ -9,7 +9,5 @@ OBJ = $(SRC:%.c=%.o)
 
 NAME = school
 
-all: file_exe
-
-file_exe:
+all:
 	${CC} ${OBJ} -o ${NAME}
