@@ -1,0 +1,13 @@
+# Create a makefile
+
+CC=gcc
+# the compiler to be used
+
+SRC=main.c school.c
+# all the .c file
+
+OBJ=$(SRC:%.c=%.o)
+# the .o files
+
+NAME=school
+# the name of the executable
