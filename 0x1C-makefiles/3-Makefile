@@ -3,9 +3,9 @@
 CC = gcc
 # the compiler to be used
 
-SRC := $(wildcard *.c)
+SRC = main.c school.c
 
-OBJ := $(SRC:%.c=%.o)
+OBJ = $(SRC:%.c=%.o)
 
 NAME = school
 

@@ -3,7 +3,7 @@
 CC = gcc
 # the compiler to be used
 
-SRC = $(wildcard *.c)
+SRC = main.c school.c
 # all the .c fies
 
 all: file_exe
