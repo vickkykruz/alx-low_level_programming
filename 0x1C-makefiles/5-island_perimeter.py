@@ -1,4 +1,4 @@
-#!/user/bin/python3
+#!/usr/bin/python3
 """
     This is a module that Create a function def island_perimeter(grid)
 
