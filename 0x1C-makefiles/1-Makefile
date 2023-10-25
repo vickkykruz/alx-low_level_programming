@@ -1,0 +1,12 @@
+# Create a Makefileswith condition
+
+CC = gcc
+# the compiler to be used
+
+SRC = $(wildcard *.c)
+# all the .c fies
+
+all: file_exe
+
+file_exe:
+	${CC} ${SRC} -o school
